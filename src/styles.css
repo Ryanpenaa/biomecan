@@ -142,3 +142,46 @@
     color: var(--color-foreground);
   }
 }
+
+
+/* Instagram bio — lightweight, mobile-first */
+.bio-page { min-height:100vh; background:#0e1117; color:#f5f5f4; position:relative; isolation:isolate; overflow:hidden; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.bio-glow {position:absolute;width:650px;height:570px;left:50%;top:-410px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(246,176,48,.20),transparent 67%);pointer-events:none;z-index:-1;}
+.bio-container {width:min(100% - 36px,550px);margin:auto;padding:47px 0 27px;}
+.bio-header {text-align:center;}
+.bio-logo {height:73px;width:73px;display:grid;place-items:center;margin:0 auto 19px;background:linear-gradient(140deg,#f4c45c,#de8d24);color:#161616;border-radius:23px;box-shadow:0 12px 38px #d9952938;transform:rotate(-6deg);}
+.bio-logo svg {transform:rotate(6deg);}
+.bio-kicker {font-size:10px;font-weight:800;letter-spacing:2.5px;color:#efbe64;margin-bottom:13px;}
+.bio-header h1 {font-size:clamp(30px,7vw,43px);letter-spacing:-1.55px;line-height:1.12;font-weight:840;max-width:440px;margin:0 auto;}
+.bio-header h1 span {color:#f1b849;}
+.bio-intro {font-size:14px;line-height:1.7;color:#aeb2bc;max-width:400px;margin:17px auto 18px;}
+.bio-pills {display:flex;justify-content:center;gap:9px;flex-wrap:wrap;}
+.bio-pills span {display:flex;align-items:center;gap:5px;border:1px solid #30343b;background:#1b2029;border-radius:99px;font-size:11px;color:#d4d6db;padding:7px 11px;}
+.bio-pills svg {color:#ecc16d;}
+.bio-section {margin-top:39px;}
+.bio-section-heading {display:flex;align-items:center;justify-content:space-between;margin-bottom:13px;gap:10px;font-size:10px;font-weight:850;letter-spacing:1.2px;color:#dbdde0;}
+.bio-count {font-size:9px;color:#a0a5b2;letter-spacing:1px;}
+.bio-courses {display:flex;flex-direction:column;gap:12px;}
+.bio-course {display:flex;position:relative;gap:15px;text-decoration:none;color:inherit;border:1px solid #31343b;background:linear-gradient(120deg,#222731,#181d25);border-radius:19px;padding:21px 18px;min-height:175px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;}
+.bio-course:hover {transform:translateY(-2px);border-color:#c8a35c;box-shadow:0 10px 30px #0004;}
+.bio-course:focus-visible {outline:3px solid #f1b849;outline-offset:3px;}
+.bio-course-icon {flex:none;display:grid;place-items:center;width:58px;height:58px;border-radius:15px;background:#f6bd5230;color:#efba54;border:1px solid #f6bd5240;}
+.bio-course-blue .bio-course-icon {color:#8fc4fa;background:#3685dc24;border-color:#3685dc48;}
+.bio-course-red .bio-course-icon {color:#fab0a1;background:#dc594126;border-color:#dc594149;}
+.bio-course-body {min-width:0;flex:1;}
+.bio-tag {font-size:9px;letter-spacing:1.1px;font-weight:800;color:#f0b955;margin:1px 0 7px;}
+.bio-course-blue .bio-tag {color:#97cbff;}
+.bio-course-red .bio-tag {color:#ffae9f;}
+.bio-course h2 {font-size:20px;line-height:1.17;font-weight:800;letter-spacing:-.5px;margin:0 0 5px;}
+.bio-subtitle {font-size:11px;font-weight:700;color:#e0e3e8;margin:0 0 9px;}
+.bio-subtitle span {font-weight:400;color:#9da4b0;}
+.bio-detail {font-size:12px;line-height:1.48;color:#b0b6c0;max-width:330px;margin:0 0 12px;}
+.bio-course-cta {font-size:12px;font-weight:800;color:#f4c15e;display:flex;align-items:center;gap:3px;}
+.bio-course-blue .bio-course-cta {color:#9dcaff;}
+.bio-course-red .bio-course-cta {color:#ffb6a6;}
+.bio-footer {text-align:center;padding:30px 0 6px;color:#89909c;}
+.bio-footer-line {height:1px;background:#2a3039;margin-bottom:22px;}
+.bio-footer p {font-weight:700;font-size:12px;color:#d3d5da;margin-bottom:7px;}
+.bio-footer small {font-size:10px;}
+@media(max-width:370px) {.bio-container{width:calc(100% - 24px);padding-top:33px}.bio-course{gap:11px;padding:17px 12px}.bio-course-icon{width:44px;height:44px}.bio-course-icon svg{width:25px}.bio-course h2{font-size:18px}.bio-section-heading{font-size:9px}}
+@media(prefers-reduced-motion:reduce) {.bio-course{transition:none}}
